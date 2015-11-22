@@ -29,11 +29,11 @@ ENV DNS_ADDR    8.8.8.8
 
 EXPOSE $SERVER_PORT
 
-CMD ss-server -s $SERVER_ADDR \
-              -p $SERVER_PORT \
-              -k ${PASSWORD:-$(hostname)} \
-              -m $METHOD \
-              -t $TIMEOUT \
-              --fast-open \
-              -d $DNS_ADDR \
-              -u
+#CMD ss-server -s $SERVER_ADDR \
+#              -p $SERVER_PORT \
+#              -k ${PASSWORD:-$(hostname)} \
+#              -m $METHOD \
+#              -t $TIMEOUT \
+#              --fast-open \
+#              -d $DNS_ADDR \
+#              -u
